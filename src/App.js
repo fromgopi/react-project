@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Tick from './Tick'
 
 class App extends Component {
   render() {
@@ -10,9 +11,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h2>Shopping List for {this.props.name}</h2>
+        <h3>
+            <Tick/>
+        </h3>
       </div>
     );
   }
