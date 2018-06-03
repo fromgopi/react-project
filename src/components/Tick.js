@@ -9,5 +9,3 @@ class Tick extends Component{
         );
     }
 }
-
-export default Tick;
